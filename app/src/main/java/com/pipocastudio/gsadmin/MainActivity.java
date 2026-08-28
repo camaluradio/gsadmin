@@ -79,15 +79,18 @@ public class MainActivity extends Activity {
     private void configureSystemBars() {
         Window window = getWindow();
         window.setStatusBarColor(0xFF0D6EFD);
-        window.setNavigationBarColor(0xFFFFFFFF);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+        window.setNavigationBarColor(0xFF0D6EFD);
+        // Barras del sistema GS ADMIN: azul arriba y abajo.
+        window.getDecorView().setSystemUiVisibility(0);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            window.setStatusBarContrastEnforced(false);
+            window.setNavigationBarContrastEnforced(false);
         }
     }
 
     private void buildInterface() {
         root = new FrameLayout(this);
-        root.setBackgroundColor(0xFFFFFFFF);
+        root.setBackgroundColor(0xFF0D6EFD);
 
         webView = new WebView(this);
         root.addView(webView, new FrameLayout.LayoutParams(

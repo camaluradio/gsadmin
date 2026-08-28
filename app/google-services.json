@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011778802431",
+    "project_id": "gs-admin-799eb",
+    "storage_bucket": "gs-admin-799eb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011778802431:android:9a8a2f40c4e0f5ef4172ca",
+        "android_client_info": {
+          "package_name": "com.pipocastudio.gsadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkOPnvLm_nRRAHm82vhqq7tXdL5sxqJbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
